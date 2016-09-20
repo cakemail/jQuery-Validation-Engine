@@ -801,10 +801,10 @@
 
 			/* run callback function for each field */
 			if (options.isError && options.onFieldFailure)
-				options.onFieldFailure(field);
+				options.onFieldFailure(field, promptText);
 
 			if (!options.isError && options.onFieldSuccess)
-				options.onFieldSuccess(field);
+				options.onFieldSuccess(field, promptText);
 
 			return options.isError;
 		},
