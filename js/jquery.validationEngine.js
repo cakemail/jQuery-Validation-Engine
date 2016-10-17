@@ -965,7 +965,7 @@
 					// old validation style
 					var form = field.closest("form, .validationEngineContainer");
 					var name = field.attr("name");
-					if (form.find("input[name='" + name + "']:checked")length == 0) {
+					if (form.find("input[name='" + name + "']:checked").length == 0) {
 						if (form.find("input[name='" + name + "']:visible").length == 1)
 							return options.allrules[rules[i]].alertTextCheckboxe;
 						else
@@ -1338,7 +1338,7 @@
 
 			var nbCheck = rules[i + 1];
 			var groupname = field.attr("name");
-			var groupSize = form.find("input[name='" + groupname + "']:checked")lengthsize();
+			var groupSize = form.find("input[name='" + groupname + "']:checked").length;
 			if (groupSize > nbCheck) {
 				options.showArrow = false;
 				if (options.allrules.maxCheckbox.alertText2)
